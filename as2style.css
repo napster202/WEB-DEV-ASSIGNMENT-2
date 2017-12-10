@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'distant_galaxyregular';
+    src: url('DISTGRG_-webfont.eot');
+    src: url('DISTGRG_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DISTGRG_-webfont.woff2') format('woff2'),
+         url('DISTGRG_-webfont.woff') format('woff'),
+         url('DISTGRG_-webfont.ttf') format('truetype'),
+         url('DISTGRG_-webfont.svg#distant_galaxyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+#div1 {
+      background-image: url("stars-in-the-night-sky.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 30%;
+      font-family: 'distant_galaxyregular';
+      font-size: 32px;
+      padding: 0;
+      margin: 0;
+}
+
+#heading {
+          color: #FFFF00;
+          font-size: 32px;
+          text-align: center;
+          padding: 14px;
+          margin: 0;
+}
+
+#menu {
+       font-family: Arial;
+       padding: 0;
+       margin: 0;
+       position: fixed;
+       background-color: #228B22;
+       width: 100%;
+}
+
+.mtab {
+       display: inline-block;
+}
+
+.btab{
+      padding: 5px;
+      background: rgba(23, 23, 23, 0);
+      color: white;
+      font-size: large;
+      margin: 0;
+      border: 0;
+      cursor: pointer;
+      width: 100px;
+}
+
+.mtab:hover .btab{
+                  background-color: #FF0000;
+}
+
+.mtab:hover .drop{
+                  display: block;
+}
+
+.drop {
+        display: none;
+        background-color: #FF0000;
+        position: absolute;
+        width: 100px;
+}
+
+.drop a{
+        font-size: large;
+        display: block;
+        padding: 10% 3%;
+        width: 100px;
+}
+
+.drop a:hover{
+              background-color: #000000;
+}
+
+a:link {
+        color: #FFFFFF;
+        text-decoration: none;
+}
+
+a:visited {
+           color: #FFFFFF;
+}
+
+@keyframes intro {
+                  0%     {background-image: url("EmpireWallpaper.jpg");}
+                  33.33% {background-image: url("palpatine.jpg");}
+                  66.67% {background-image: url("fleet_review.jpg");}
+                  100%   {background-image: url("EmpireWallpaper.jpg");}
+}
+
+#div2 {
+      background-size: contain;
+      width: 100%;
+      height: 92%;
+      animation-name: intro;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      background-color: #000000;
+      display: block;
+}
+
+#div2:hover {
+             opacity: 0.6;
+             animation-play-state: paused;
+             background-color: #000000;
+}
+
+#hhis {
+       font-family: 'distant_galaxyregular';
+       font-size: 36px;
+       color: #FFFF00;
+}
+
+#his {
+      font-family: Arial;
+      width: 100%;
+      height: 92%;
+      opacity: 0;
+      font-size: 34px;
+      color: #FFFFFF;
+      display: block;
+}
+
+#his:hover {
+            opacity: 1.0;
+            border: 3px solid white;
+            cursor: pointer;
+}
+
+#planets {
+          padding-top:20px;
+          width: 100%;
+}
+
+#pname {
+        width: 100%;
+        height: 7%;
+        font-size: 36px;
+        font-family: 'distant_galaxyregular';
+        color: #FFFF00;
+        padding: 0px;
+}
+
+#pimg1 {
+        background-image: url("tatooine.jpg");
+        background-size: cover;
+        display: inline-block;
+        width: 32%;
+        height: 90%;
+        margin: 2px;
+        border: 3px solid white;
+}
+
+#pimg2 {
+        background-image: url("Coruscant-EotE.jpg");
+        display: inline-block;
+        width: 32%;
+        height: 90%;
+        margin: 2px;
+        border: 3px solid white;        
+}
+
+#pimg3 {
+        background-image: url("Endor_FFGRebellion.png");
+        display: inline-block;
+        width: 32%;
+        height: 90%;
+        margin: 2px;
+        border: 3px solid white;
+}
+
+.ptext{
+       width: 100%;
+       height: 100%;       
+       display: block;
+       opacity: 0;
+       color: #FFFFFF;
+       font-family: Arial;
+       font-size: 30px;
+}
+
+.plan {
+       font-family: 'distant_galaxyregular';
+       font-size: 40px;
+       text-align: center;
+       padding-top: 10px;
+       color: #FFFF00;
+}
+
+.pimg:hover {
+             opacity: 0.6;
+             cursor: pointer;
+}
+
+.ptext:hover {
+              opacity: 1;
+}
+
+#army {
+       padding-top: 40px;
+       width: 100%;
+       height: 100%;
+}
+
+#atit {
+       font-family: 'distant_galaxyregular';
+       font-size: 40px;
+       color: #FFFF00;
+}
+
+.flip {
+       width: 32%;
+       height: 90%;
+       display: inline-block;
+       margin: 2px;
+       border: 3px solid white;
+       perspective: 1000px;
+}
+
+.asec {
+       transition: 1s;
+       transform-style: preserve-3d;
+       width: 100%;
+       height: 100%;
+       position: relative;
+}
+
+#ah1 {
+      background-image: url("Death_star1.png");
+}
+
+#ah2 {
+      background-image: url("imp_navy.jpg");
+}
+
+#ah3 {
+      background-image: url("imp_army.jpg");
+}
+
+.ahead {
+        font-family: 'distant_galaxyregular';
+        font-size: 34px;
+        color: #FFFF00; 
+        z-index: 2;
+        width: 100%;
+        background-size: cover;
+        height: 100%;
+}
+
+.adetl {
+        font-family: Arial;
+        color: #FFFF00;
+        font-size: 25px;
+        transform: rotateY(180deg);
+}
+
+.flip:hover .asec {
+                   transform: rotateY(180deg);
+}
+
+.ahead, .adetl {
+                backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+}
+
+#det {
+      padding-top: 100px;
+}
+
+.hdet {
+       font-family: 'distant_galaxyregular';
+       color: #FFFF00;
+       font-size: 38px;
+}
+
+.ddet {
+       padding: 10px;
+       font-family: Arial;
+       color: #FFFF00;
+       font-size: 20px;
+}
+
+#end {
+      font-family: 'distant_galaxyregular';
+      color: #FFFF00;
+      font-size: 30px;
+      text-align: center;
+}
